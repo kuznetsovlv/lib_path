@@ -1,4 +1,6 @@
 *.o
 *.so
+*.log
 path.h
 build/test
+build/artifacts
