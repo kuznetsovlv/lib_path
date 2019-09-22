@@ -9,8 +9,7 @@ install: libPath.so
 	cp libPath.so $(path_to_lib)/$(full_lib_name)
 	-rm -f $(path_to_lib)/libPath.so 2>/dev/null
 	ln -s $(path_to_lib)/$(full_lib_name) $(path_to_lib)/libPath.so
-	echo $(path_to_lib) >> /etc/ld.so.conf
-	ldconfig
+	./update_ld.sh /etc/ld.so.conf $(path_to_lib)
 
 libPath.so: $(objects) path.h
 	gcc -shared $(objects) -fPIC -o libPath.so
