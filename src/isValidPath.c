@@ -12,7 +12,7 @@ int isValidPath(const char *path)
 		switch (*(path + i))
 		{
 			case '/': continue;
-			case '~': if(!isEnd(*(path + (++i)))) break;
+			case '~': if(!i || !isEnd(*(path + (++i)))) break;
 			case '-': return 0;
 		}
 		while(!isEnd(*(path + (++i))));
