@@ -33,6 +33,11 @@ char *getAbsolutePath(const char *path)
 		strcat(result, "/");
 		strcat(result, path);
 	}
+	else
+	{
+		result = malloc(sizeof(char) * (strlen(path) + 1));
+		strcpy(result, path);
+	}
 
 	if (!normalizePath(result))
 	{
