@@ -5,6 +5,7 @@
 #include "private.h"
 #include "getHome.h"
 #include "getCurrentPath.h"
+#include "normalizePath.h"
 
 char *getAbsolutePath(const char *path)
 {

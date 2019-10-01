@@ -3,6 +3,7 @@
 #include "unity.h"
 #include "private.h"
 #include "getAbsolutePath.h"
+#include "normalizePath.h"
 #include "mock_getHome.h"
 #include "mock_getCurrentPath.h"
 

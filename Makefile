@@ -1,6 +1,6 @@
 #Makefile
 dir = test/support
-tests = test_private test_isValidPath test_getAbsolutePath
+tests = test_private test_isValidPath test_getAbsolutePath test_normalizePath
 install:
 	cd src && make install
 
@@ -15,6 +15,9 @@ test_isValidPath: $(dir)
 
 test_getAbsolutePath: $(dir)
 	ceedling test:test_getAbsolutePath.c
+
+test_normalizePath: $(dir)
+	ceedling test:test_normalizePath.c
 
 test/support:
 	mkdir -p $(dir)

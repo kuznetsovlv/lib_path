@@ -1,7 +1,7 @@
 #Makefile
-objects = getAbsolutePath.o getCurrentPath.o getHome.o isValidPath.o private.o version.o
+objects = getAbsolutePath.o getCurrentPath.o getHome.o isValidPath.o private.o normalizePath.o version.o
 path_to_lib = /usr/local/lib
-headers = getAbsolutePath.h getCurrentPath.h getHome.h isValidPath.h version.h
+headers = getAbsolutePath.h getCurrentPath.h getHome.h isValidPath.h normalizePath.h version.h
 full_lib_name = libPath.so.`head -n 2 version.h | tail -n +2 | cut -d " " -f 3 | cut -d \" -f 2`
 
 install: libPath.so
@@ -27,6 +27,8 @@ isValidPath.o: isValidPath.h
 	gcc -c isValidPath.c -fPIC -o isValidPath.o
 private.o: private.h
 	gcc -c private.c -fPIC -o private.o
+normailze.o: normalizePath.h
+	gcc -c normalizePath.c -fPIC -o normalizePath.o
 version.o: version.h
 	gcc -c version.c -fPIC -o version.o
 
