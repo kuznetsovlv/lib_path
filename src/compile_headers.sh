@@ -1,5 +1,5 @@
 #! /bin/sh
-echo "#define __PATH__LIB__PATH"
+echo "#define __PATH__LIB__PATH__"
 echo "#define __PATH__LIB__PATH__"
 for header in $@
 do
