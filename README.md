@@ -5,7 +5,7 @@ C library to work with UNIX-type file path
 - [Content](#user-content-content "Conten")
 - [GitHub.](#user-content-github "Link to GitHub repository")
 - [Install.](#user-content-install "Install")
-- [Usage.](#usage-content-usege "Usage")
+- [Usage.](#user-content-usage "Usage")
 - [License](#user-content-license "License")
 
 ## GitHub.
